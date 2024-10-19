@@ -20,20 +20,19 @@ export default function Navbar() {
 
   return (
     <div className="fixed top-0 left-0 right-0 bg-primaryBlue z-50">
-     
       <div className="max-w-[1140px] mx-auto px-6 pt-6 lg:px-8">
         <nav
           className="flex items-center py-4 justify-between"
           aria-label="Global"
         >
-          <div className="hidden lg:flex lg:flex-1">
+          <div className=" lg:flex lg:flex-1">
             <h1 className="text-2xl font-bold">HR Solutions</h1>
           </div>
           <div className="flex lg:hidden">
             <button
               type="button"
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-              onClick={() => setIsMobileMenuOpen(true)}
+              onClick={() => setIsMobileMenuOpen((prev) => !prev)}
             >
               <span className="sr-only">Open main menu</span>
               <Bars3Icon className="h-6 w-6 text-white" aria-hidden="true" />
@@ -57,8 +56,10 @@ export default function Navbar() {
             className="fixed inset-0 z-10 overflow-y-auto bg-primaryBlue px-6 py-6 lg:hidden"
           >
             <div className="flex items-center justify-between">
-              <Link href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only font-bold text-lg">Nginep</span>
+              <Link
+                href="#"
+                className="-m-1.5 p-1.5  sr-only font-bold text-lg "
+              >
                 HR Solutions
               </Link>
               <button
@@ -92,4 +93,6 @@ export default function Navbar() {
     </div>
   );
 }
+
+
 

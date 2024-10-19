@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row justify-between">
           <div className="w-full mr-12 lg:w-1/4">
-            <h1 className=" text-2xl font-bold text-bgColor"> HR SOlutions</h1>
+            <h1 className=" text-2xl font-bold text-bgColor"> HR Solutions</h1>
             <p className=" text-bgColor mt-4">
               The best human resource platform in the world
             </p>
